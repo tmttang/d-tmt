@@ -29,7 +29,7 @@ Start the development server
 
 ## Live preview
 
-https://tmtcc1.netlify.app/
+https://d-tmt.com
 
 ## License
 

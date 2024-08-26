@@ -28,10 +28,10 @@ export default {
           fontFamily: 'NeueMontrealRegular',
         },
         h1: {
-          fontSize: theme('fontSize.4xl'),
+          fontSize: theme('fontSize.3xl'),
           lineHeight: theme('lineHeight.tight'),
           '@screen sm': {
-            fontSize: theme('fontSize.7xl'),
+            fontSize: theme('fontSize.5xl'),
           },
         },
         h2: {

@@ -9,17 +9,19 @@ const HeroSection = () => {
           <MotionInner>
             <div className='text-black max-w-3xl h-auto text-center'>
               <h1>
-                A brand and product designer working with clients globally
+                A skilled front-end developer delivering impactful web
+                experiences for clients globally
               </h1>
             </div>
           </MotionInner>
-          <div className='hidden sm:block'>
+          <div className='block'>
             <MotionInner>
-              <div className='flex flex-row items-center justify-center gap-6 '>
+              <div className='flex flex-wrap items-center justify-center gap-6 '>
                 <p>Expertise</p>
-                <p className='rounded-full bg-light-gray p-2'>Branding</p>
-                <p className='rounded-full bg-light-gray p-2'>Product</p>
-                <p className='rounded-full bg-light-gray p-2'>Design Systems</p>
+                <p className='rounded-full bg-light-gray p-2'>React.js</p>
+                <p className='rounded-full bg-light-gray p-2'>Tailwind CSS</p>
+                <p className='rounded-full bg-light-gray p-2'>GSAP</p>
+                <p className='rounded-full bg-light-gray p-2'>Framer Motion</p>
               </div>
             </MotionInner>
           </div>
