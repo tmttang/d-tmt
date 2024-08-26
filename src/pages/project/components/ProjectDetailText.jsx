@@ -1,6 +1,6 @@
 import MotionContainer from '../../../components/layout/MotionContainer'
 import MotionInner from '../../../components/layout/MotionInner'
-const ProjectDetailText = ({ headline, title }) => {
+const ProjectDetailText = ({ headline, titles }) => {
   return (
     <MotionContainer>
       <div className='container mx-auto'>
@@ -11,8 +11,12 @@ const ProjectDetailText = ({ headline, title }) => {
             </div>
           </MotionInner>
           <MotionInner>
-            <div className='flex flex-row items-center justify-center gap-6'>
-              <p className='rounded-full bg-light-gray p-2'>{title}</p>
+            <div className='flex flex-col sm:flex-row items-center gap-5 p-5 text-center'>
+              {titles.map((title, index) => (
+                <p className='rounded-full bg-light-gray p-2' key={index}>
+                  {title}
+                </p>
+              ))}
             </div>
           </MotionInner>
         </div>

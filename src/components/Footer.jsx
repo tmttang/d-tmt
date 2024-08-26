@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const Footer = ({ position }) => {
   return (
     <footer
@@ -6,12 +8,16 @@ const Footer = ({ position }) => {
       }`}
     >
       <div className='flex flex-row'>
-        <p>© 2024 - All right reserved</p>
+        <p>© 2024 - TMT</p>
       </div>
       <div className='flex flex-row gap-4'>
-        <p>Twitter</p>
-        <p>GitHub</p>
-        <p>LinkedIn</p>
+        <Link
+          to='https://www.linkedin.com/in/dtmt/'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <p>LinkedIn</p>
+        </Link>
       </div>
     </footer>
   )

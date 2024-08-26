@@ -1,6 +1,6 @@
-import { useDataStore } from '../../../store/dataStore'
 import MotionContainer from '../../../components/layout/MotionContainer'
 import MotionInner from '../../../components/layout/MotionInner'
+import { useDataStore } from '../../../store/dataStore'
 const ExperiencesSection = () => {
   const experiences = useDataStore((state) => state.experiences)
   return (
@@ -13,9 +13,9 @@ const ExperiencesSection = () => {
             </MotionInner>
             <MotionInner>
               <h2 className='text-center w-full sm:w-1/2 mx-auto p-5'>
-                A freelance designer based in the UK. I combine my experience in
-                product and brand to solve problems, tell stories, and create
-                compelling experiences.
+                A front-end web developer based in the Canada. I combine my
+                experience in product and brand to solve problems, tell stories,
+                and create compelling experiences.
               </h2>
             </MotionInner>
           </div>

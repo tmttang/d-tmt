@@ -1,13 +1,15 @@
-import { useDataStore } from '../../store/dataStore'
 import { ScrollRestoration, useParams } from 'react-router-dom'
+import Close from '../../components/Close'
 import Contacts from '../../components/Contacts'
 import Footer from '../../components/Footer'
-import Close from '../../components/Close'
+import MotionContainer from '../../components/layout/MotionContainer'
+import { useDataStore } from '../../store/dataStore'
+import NotFoundPage from '../notFoundPage'
+import ProjectDetailDescription from './components/ProjectDetailDescription'
 import ProjectDetailGrid from './components/ProjectDetailGrid'
 import ProjectDetailImage from './components/ProjectDetailImage'
 import ProjectDetailText from './components/ProjectDetailText'
-import MotionContainer from '../../components/layout/MotionContainer'
-import NotFoundPage from '../notFoundPage'
+import ProjectDetailVimeo from './components/ProjectDetailVimeo'
 
 const Project = () => {
   const { projectSlug } = useParams()
@@ -21,14 +23,19 @@ const Project = () => {
   if (!project) {
     return <NotFoundPage />
   }
-
   return (
     <>
       <Close />
 
       <ScrollRestoration />
 
-      <ProjectDetailText headline={project.headline} title={project.title} />
+      <ProjectDetailText headline={project.headline} titles={project.titles} />
+
+      {projectSlug === 'phxkfc' || projectSlug === 'kfc' ? (
+        <MotionContainer>
+          <ProjectDetailVimeo vimeo={project.vimeo} />
+        </MotionContainer>
+      ) : null}
 
       {project.videos ? (
         <>
@@ -53,16 +60,30 @@ const Project = () => {
         </>
       ) : null}
 
+      {project.description && project.headline ? (
+        <ProjectDetailDescription
+          description={project.description}
+          headline={project.headline}
+        />
+      ) : null}
+
       <MotionContainer viewport={{ once: true, amount: 0.1 }}>
         <div className='container mx-auto'>
           <ProjectDetailGrid colSpans={project.colspan}>
-            {project.images.map((imageUrl, index) => (
-              <ProjectDetailImage
-                key={index}
-                src={imageUrl}
-                alt={`image` + index}
-              />
-            ))}
+            {project.webp.map((webpUrl, index) => {
+              const jpgUrl = project.jpg[index]
+              if (!webpUrl || !jpgUrl) {
+                return null // Graceful handling of mismatched arrays
+              }
+              return (
+                <ProjectDetailImage
+                  key={index}
+                  webp={webpUrl}
+                  jpg={jpgUrl}
+                  alt={`Project image ${index + 1}`} // Descriptive and accessible alt text
+                />
+              )
+            })}
           </ProjectDetailGrid>
         </div>
       </MotionContainer>

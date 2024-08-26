@@ -1,6 +1,6 @@
-import { useDataStore } from '../../../store/dataStore'
 import MotionContainer from '../../../components/layout/MotionContainer'
 import MotionInner from '../../../components/layout/MotionInner'
+import { useDataStore } from '../../../store/dataStore'
 
 const ClientsSection = () => {
   const clients = useDataStore((state) => state.clients)
@@ -16,17 +16,16 @@ const ClientsSection = () => {
           {clients.map((client) => {
             return (
               <MotionInner key={client.id}>
-                <div
-                  className={`text-center p-5 flex flex-col gap-4 ${
-                    client.name === 'Here' ? 'invert-0' : 'invert'
-                  }`}
-                >
-                  <img
-                    src={client.image}
-                    alt={client.name}
-                    srcSet=''
-                    className='pointer-events-none user-select-none block w-full h-full object-cover object-center'
-                  />
+                <div className={`text-center p-5 flex flex-col gap-4 `}>
+                  <picture className='pointer-events-none user-select-none block w-full h-full object-cover object-center'>
+                    <source srcSet={client.webp} type='image/webp' />
+                    <source srcSet={client.png} type='image/jpg' />
+                    <img
+                      src={client.png}
+                      alt={client.name}
+                      className='pointer-events-none user-select-none block w-full h-full object-cover object-center'
+                    />
+                  </picture>
                 </div>
               </MotionInner>
             )

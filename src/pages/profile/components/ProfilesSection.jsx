@@ -1,6 +1,6 @@
-import { useDataStore } from '../../../store/dataStore'
 import MotionContainer from '../../../components/layout/MotionContainer'
 import MotionInner from '../../../components/layout/MotionInner'
+import { useDataStore } from '../../../store/dataStore'
 
 const ProfilesSection = () => {
   const profiles = useDataStore((state) => state.profiles)
@@ -11,7 +11,7 @@ const ProfilesSection = () => {
           <div className='flex flex-col items-center min-h-70vh justify-center gap-10 py-20'>
             <div className='text-black max-w-3xl h-auto text-center'>
               <MotionInner>
-                <h1>Hey 👋🏼 I'm Oli </h1>
+                <h1>Hey 👋🏼 I'm Man Tik </h1>
               </MotionInner>
             </div>
           </div>
@@ -24,11 +24,15 @@ const ProfilesSection = () => {
               return (
                 <MotionInner key={profile.id}>
                   <div className='rounded-xl relative overflow-hidden h-full'>
-                    <img
-                      src={profile.image}
-                      alt={profile.name}
-                      className='pointer-events-none user-select-none block w-full h-full object-cover object-center'
-                    />
+                    <picture className='pointer-events-none user-select-none block w-full h-full object-cover object-center'>
+                      <source srcSet={profile.webp} type='image/webp' />
+                      <source srcSet={profile.jpg} type='image/jpg' />
+                      <img
+                        src={profile.jpg}
+                        alt={profile.name}
+                        className='pointer-events-none user-select-none block w-full h-full object-cover object-center'
+                      />
+                    </picture>
                   </div>
                 </MotionInner>
               )
