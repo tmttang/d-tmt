@@ -1,9 +1,11 @@
+import ReactGA from 'react-ga4'
 import Footer from '../../components/Footer'
 import MotionContainer from '../../components/layout/MotionContainer'
 import MotionInner from '../../components/layout/MotionInner'
 import Navbar from '../../components/Navbar'
 
 const Contact = () => {
+  ReactGA.send({ hitType: 'pageview', page: '/contact', title: 'Contact' })
   return (
     <>
       <Navbar active='Contact' />

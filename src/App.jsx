@@ -1,11 +1,15 @@
+import ReactGA from 'react-ga4'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { DataProvider } from './store/dataStore'
 import './assets/index.css'
-import Home from './pages/home'
-import Profile from './pages/profile'
+import Cookies from './components/Cookies'
 import Contact from './pages/contact'
-import Project from './pages/project'
+import CookiePolicy from './pages/cookiePolicy'
+import Home from './pages/home'
 import NotFoundPage from './pages/notFoundPage'
+import PrivacyPolicyPage from './pages/privacyPolicyPage'
+import Profile from './pages/profile'
+import Project from './pages/project'
+import { DataProvider } from './store/dataStore'
 
 const router = createBrowserRouter([
   {
@@ -21,6 +25,14 @@ const router = createBrowserRouter([
     element: <Contact />,
   },
   {
+    path: '/privacy-policy',
+    element: <PrivacyPolicyPage />,
+  },
+  {
+    path: '/cookie-policy',
+    element: <CookiePolicy />,
+  },
+  {
     path: '/project/:projectSlug',
     element: <Project />,
     errorElement: <NotFoundPage />,
@@ -32,8 +44,10 @@ const router = createBrowserRouter([
 ])
 
 function App() {
+  ReactGA.initialize('G-HH5RE3B7P4')
   return (
     <DataProvider>
+      <Cookies />
       <RouterProvider router={router} />
     </DataProvider>
   )

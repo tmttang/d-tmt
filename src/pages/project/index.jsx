@@ -1,3 +1,4 @@
+import ReactGA from 'react-ga4'
 import { ScrollRestoration, useParams } from 'react-router-dom'
 import Close from '../../components/Close'
 import Contacts from '../../components/Contacts'
@@ -23,6 +24,12 @@ const Project = () => {
   if (!project) {
     return <NotFoundPage />
   }
+
+  ReactGA.send({
+    hitType: 'pageview',
+    page: '/project/:projectSlug',
+    title: 'Project',
+  })
   return (
     <>
       <Close />
