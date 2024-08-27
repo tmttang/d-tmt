@@ -16,7 +16,9 @@ const ClientsSection = () => {
           {clients.map((client) => {
             return (
               <MotionInner key={client.id}>
-                <div className={`text-center p-5 flex flex-col gap-4 `}>
+                <div
+                  className={`text-center p-5 flex flex-col gap-4 `} /* invert */
+                >
                   <picture className='pointer-events-none user-select-none block w-full h-full object-cover object-center'>
                     <source srcSet={client.webp} type='image/webp' />
                     <source srcSet={client.png} type='image/jpg' />

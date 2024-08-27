@@ -85,6 +85,7 @@ export const projectsDetail = {
     headline: 'Pizza Hut X KFC',
     description:
       'Pizza Hut and KFC are releasing an epic collaboration pizza. Ogilvy Hong Kong created a co-op mobile video game: Pizza Hut x KFC Kitchen. The game connects two phones where you and a friend can make the latest Pizza Hut x KFC Chicken Popcorn Pizza unlock tasty rewards!',
+    awards: 'KamFan Awards 2021 - Bronze for Mobile Single - Games / eSports',
     vimeo: 'https://player.vimeo.com/video/476169142?h=b7b1dd9b39',
     webp: [
       '/images/phxkfc/webp/1.webp',
@@ -122,6 +123,8 @@ export const projectsDetail = {
     titles: ['JavaScript', 'GSAP', 'Phaser.js', 'Node.js', 'Socket.io'],
     headline: 'KFC',
     description: 'KFC Golden Fortune Bucket',
+    awards:
+      'Kam Fan Awards 2017 - Bronze for Media Single - Best Use of Mobile Devices',
     vimeo: 'https://player.vimeo.com/video/243586805?h=0de9b8ffaf',
     webp: ['/images/kfc/webp/1.webp'],
     jpg: ['/images/kfc/jpg/1.jpg'],
@@ -369,63 +372,77 @@ export const experiences = [
 export const clients = [
   {
     id: 1,
-    name: 'Asia Miles',
-    webp: '/images/brands/webp/asia-miles.webp',
-    png: '/images/brands/png/asia-miles.jpg',
+    name: 'American Express',
+    webp: '/images/brands/webp/american-express.webp',
+    png: '/images/brands/png/american-express.png',
   },
   {
     id: 2,
-    name: 'Cathay Pacific',
-    webp: '/images/brands/webp/cathay-pacific.webp',
-    png: '/images/brands/png/cathay-pacific.jpg',
+    name: 'Asia Miles',
+    webp: '/images/brands/webp/asia-miles.webp',
+    png: '/images/brands/png/asia-mile.png',
   },
   {
     id: 3,
-    name: 'Rakuten',
-    webp: '/images/brands/webp/rakuten.webp',
-    png: '/images/brands/png/rakuten.jpg',
+    name: 'Cathay Pacific',
+    webp: '/images/brands/webp/cathay-pacific.webp',
+    png: '/images/brands/png/cathay-pacific.png',
   },
   {
     id: 4,
-    name: 'Huawei',
-    webp: '/images/brands/webp/huawei.webp',
-    png: '/images/brands/png/huawei.jpg',
+    name: 'Celerate X',
+    webp: '/images/brands/webp/celeratex.webp',
+    png: '/images/brands/png/celeratex.png',
   },
   {
     id: 5,
-    name: 'Pizza Hut',
-    webp: '/images/brands/webp/pizza-hut.webp',
-    png: '/images/brands/png/pizza-hut.jpg',
+    name: 'HSBC',
+    webp: '/images/brands/webp/hsbc.webp',
+    png: '/images/brands/png/hsbc.png',
   },
   {
     id: 6,
-    name: 'KFC',
-    webp: '/images/brands/webp/kfc.webp',
-    png: '/images/brands/png/kfc.jpg',
+    name: 'Huawei',
+    webp: '/images/brands/webp/huawei.webp',
+    png: '/images/brands/png/huawei.png',
   },
   {
     id: 7,
-    name: 'Shangri la',
-    webp: '/images/brands/webp/shangri-la.webp',
-    png: '/images/brands/png/shangri-la.jpg',
+    name: 'Jfoodo',
+    webp: '/images/brands/webp/jfoodo.webp',
+    png: '/images/brands/png/jfoodo.png',
   },
   {
     id: 8,
-    name: 'Celerate X',
-    webp: '/images/brands/webp/celeratex.webp',
-    png: '/images/brands/png/celeratex.jpg',
+    name: 'KFC',
+    webp: '/images/brands/webp/kfc.webp',
+    png: '/images/brands/png/kfc.png',
   },
   {
     id: 9,
-    name: 'Jfoodo',
-    webp: '/images/brands/webp/jfoodo.webp',
-    png: '/images/brands/png/jfoodo.jpg',
+    name: 'Pizza Hut',
+    webp: '/images/brands/webp/pizza-hut.webp',
+    png: '/images/brands/png/pizza-hut.png',
   },
   {
     id: 10,
+    name: 'Rakuten',
+    webp: '/images/brands/webp/rakuten.webp',
+    png: '/images/brands/png/rakuten.png',
+  },
+
+  {
+    id: 11,
+    name: 'Shangri la',
+    webp: '/images/brands/webp/shangri-la.webp',
+    png: '/images/brands/png/shangri-la.png',
+  },
+
+  {
+    id: 12,
     name: 'Standard Chartered Bank',
     webp: '/images/brands/webp/standard-chartered.webp',
-    png: '/images/brands/png/standard-chartered.jpg',
+    png: '/images/brands/png/standard-chartered.png',
   },
 ]
 
@@ -441,5 +458,22 @@ export const profiles = [
     name: 'profile 2',
     webp: '/images/profile/webp/profile-2.webp',
     jpg: '/images/profile/jpg/profile-2.jpg',
+  },
+]
+
+export const awards = [
+  {
+    id: 1,
+    time: '2021',
+    company: 'KamFan Awards',
+    title: 'Mobile Single - Games / eSports',
+    tag: 'Bronze',
+  },
+  {
+    id: 2,
+    time: '2017',
+    company: 'KamFan Awards',
+    title: 'Media Single - Best Use of Mobile Devices',
+    tag: 'Bronze',
   },
 ]

@@ -1,12 +1,13 @@
+import { useEffect } from 'react'
 import { create } from 'zustand'
 import {
+  awards,
+  clients,
+  experiences,
+  profiles,
   projects,
   projectsDetail,
-  profiles,
-  experiences,
-  clients,
 } from '../services/data'
-import { useEffect } from 'react'
 
 const useDataStore = create((set) => ({
   projects: [],
@@ -14,6 +15,7 @@ const useDataStore = create((set) => ({
   profiles: [],
   experiences: [],
   clients: [],
+  awards: [],
   loadData: () => {
     set((state) => ({
       projects: projects,
@@ -21,6 +23,7 @@ const useDataStore = create((set) => ({
       profiles: profiles,
       experiences: experiences,
       clients: clients,
+      awards: awards,
     }))
   },
 }))
@@ -35,4 +38,4 @@ const DataProvider = ({ children }) => {
   return <>{children}</>
 }
 
-export { useDataStore, DataProvider }
+export { DataProvider, useDataStore }

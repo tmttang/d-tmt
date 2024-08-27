@@ -22,6 +22,7 @@ const ProjectListSection = () => {
                           loop
                           muted
                           playsInline
+                          preload='none'
                           className='block w-full h-full object-cover object-center'
                         >
                           <source src={project.video} type='video/mp4' />
@@ -34,6 +35,7 @@ const ProjectListSection = () => {
                             src={project.jpg}
                             alt={project.title}
                             className='pointer-events-none user-select-none block w-full h-full object-cover object-center'
+                            loading='lazy'
                           />
                         </picture>
                       )}

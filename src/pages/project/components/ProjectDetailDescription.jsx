@@ -1,6 +1,6 @@
 import MotionContainer from '../../../components/layout/MotionContainer'
 import MotionInner from '../../../components/layout/MotionInner'
-const ProjectDetailDescription = ({ description, headline }) => {
+const ProjectDetailDescription = ({ awards, description, headline }) => {
   return (
     <MotionContainer>
       <div className='container mx-auto'>
@@ -31,6 +31,17 @@ const ProjectDetailDescription = ({ description, headline }) => {
               <p>{description}</p>
             </div>
           </MotionInner>
+
+          {awards ? (
+            <MotionInner>
+              <div className='text-gray max-w-3xl h-auto text-left pb-3'>
+                <p>Awards</p>
+              </div>
+              <div className='text-black max-w-3xl h-auto text-left'>
+                <p>{awards}</p>
+              </div>
+            </MotionInner>
+          ) : null}
         </div>
       </div>
     </MotionContainer>

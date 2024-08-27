@@ -64,6 +64,7 @@ const Project = () => {
         <ProjectDetailDescription
           description={project.description}
           headline={project.headline}
+          awards={project.awards}
         />
       ) : null}
 

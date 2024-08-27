@@ -11,6 +11,9 @@ const Footer = ({ position }) => {
         <p>© 2024 - TMT</p>
       </div>
       <div className='flex flex-row gap-4'>
+        <a href='mailto:tmtd.tang@gmail.com'>
+          <p>Email</p>
+        </a>
         <Link
           to='https://www.linkedin.com/in/dtmt/'
           target='_blank'

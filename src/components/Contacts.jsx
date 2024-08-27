@@ -10,7 +10,9 @@ const Contacts = () => {
               <h2 className='text-black'>Let's work together.</h2>
             </MotionInner>
             <MotionInner>
-              <h2 className='text-gray'>Get in touch.</h2>
+              <h2 className='text-gray'>
+                <a href='mailto:tmtd.tang@gmail.com'>Get in touch</a>.
+              </h2>
             </MotionInner>
           </div>
         </div>

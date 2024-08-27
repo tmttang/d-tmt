@@ -1,7 +1,7 @@
-import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import MotionContainer from '../../components/layout/MotionContainer'
 import MotionInner from '../../components/layout/MotionInner'
+import Navbar from '../../components/Navbar'
 
 const Contact = () => {
   return (
@@ -15,7 +15,9 @@ const Contact = () => {
                 <h2 className='text-black'>Let's work together.</h2>
               </MotionInner>
               <MotionInner>
-                <h2 className='text-gray'>Get in touch.</h2>
+                <h2 className='text-gray'>
+                  <a href='mailto:tmtd.tang@gmail.com'>Get in touch</a>.
+                </h2>
               </MotionInner>
             </div>
           </div>

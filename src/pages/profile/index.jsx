@@ -1,9 +1,10 @@
-import Navbar from '../../components/Navbar'
 import Contacts from '../../components/Contacts'
 import Footer from '../../components/Footer'
-import ProfilesSection from './components/ProfilesSection'
-import ExperiencesSection from './components/ExperiencesSection'
+import Navbar from '../../components/Navbar'
+import AwardsSection from './components/AwardsSection'
 import ClientsSection from './components/ClientsSection'
+import ExperiencesSection from './components/ExperiencesSection'
+import ProfilesSection from './components/ProfilesSection'
 
 const Profile = () => {
   return (
@@ -12,6 +13,7 @@ const Profile = () => {
       <ProfilesSection />
       <ExperiencesSection />
       <ClientsSection />
+      <AwardsSection />
       <Contacts />
       <Footer position='relative' />
     </>

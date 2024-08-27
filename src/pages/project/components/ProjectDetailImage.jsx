@@ -8,6 +8,7 @@ const ProjectDetailImage = ({ webp, jpg, alt }) => {
           src={jpg}
           alt={alt}
           className='pointer-events-none user-select-none block w-full h-full object-cover object-center'
+          loading='lazy'
         />
       </picture>
     </div>
