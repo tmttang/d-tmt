@@ -12,9 +12,9 @@ export default {
     },
     fontFamily: {
       sans: ['Arial', 'sans-serif'],
-      regular: ['NeueMontrealRegular', 'serif'],
-      medium: ['NeueMontrealMedium', 'serif'],
-      bold: ['NeueMontrealBold', 'serif'],
+      regular: ['Poppins', 'serif'],
+      medium: ['Poppins', 'serif'],
+      bold: ['Poppins', 'serif'],
     },
     extend: {},
   },
@@ -22,10 +22,10 @@ export default {
     plugin(function ({ addBase, theme }) {
       addBase({
         'h1, h2, h3, h4, h5, h6': {
-          fontFamily: 'NeueMontrealMedium',
+          fontFamily: 'Poppins',
         },
         'p, span': {
-          fontFamily: 'NeueMontrealRegular',
+          fontFamily: 'Poppins',
         },
         h1: {
           fontSize: theme('fontSize.3xl'),
