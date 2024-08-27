@@ -177,16 +177,12 @@ export const projectsDetail = {
     description: 'Asia Miles',
     webp: [
       '/images/asiamiles/webp/2.webp',
-      '/images/asiamiles/webp/3.webp',
       '/images/asiamiles/webp/4.webp',
-      '/images/asiamiles/webp/5.webp',
       '/images/asiamiles/webp/6.webp',
     ],
     jpg: [
       '/images/asiamiles/jpg/2.jpg',
-      '/images/asiamiles/jpg/3.jpg',
       '/images/asiamiles/jpg/4.jpg',
-      '/images/asiamiles/jpg/5.jpg',
       '/images/asiamiles/jpg/6.jpg',
     ],
     colspan: [
