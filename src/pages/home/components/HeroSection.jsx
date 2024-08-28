@@ -18,7 +18,7 @@ const HeroSection = () => {
             <MotionInner>
               <div className='flex flex-wrap items-center justify-center gap-6 '>
                 <p>Expertise</p>
-                <p className='rounded-full bg-light-gray p-2'>React.js</p>
+                <p className='rounded-full bg-light-gray p-2'>React</p>
                 <p className='rounded-full bg-light-gray p-2'>Tailwind CSS</p>
                 <p className='rounded-full bg-light-gray p-2'>GSAP</p>
                 <p className='rounded-full bg-light-gray p-2'>Framer Motion</p>
