@@ -31,7 +31,7 @@ const ProfilesSection = () => {
                         src={profile.jpg}
                         alt={profile.name}
                         className='pointer-events-none user-select-none block w-full h-full object-cover object-center'
-                        loading='lazy'
+                        fetchPriority='high'
                       />
                     </picture>
                   </div>
