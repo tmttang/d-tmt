@@ -75,6 +75,7 @@ export const projectsDetail = {
     headline: 'Celerate X',
     titles: ['React', 'Framer Motion', 'Tailwind CSS', 'Vite'],
     description: 'Celerate X',
+    liveUrl: 'https://celeratex.netlify.app',
     webp: ['/images/celeratex/webp/1.webp', '/images/celeratex/webp/3.webp'],
     jpg: ['/images/celeratex/jpg/1.jpg', '/images/celeratex/jpg/3.jpg'],
     colspan: ['col-span-2', 'col-span-2'],

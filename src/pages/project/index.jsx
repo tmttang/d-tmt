@@ -72,6 +72,7 @@ const Project = () => {
           description={project.description}
           headline={project.headline}
           awards={project.awards}
+          liveUrl={project.liveUrl}
         />
       ) : null}
 
