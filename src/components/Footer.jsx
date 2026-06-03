@@ -17,7 +17,7 @@ const Footer = ({ position }) => {
         </Link>
       </div>
       <div className='flex flex-row gap-4'>
-        <a href='mailto:tmtd.tang@gmail.com'>
+        <a href='mailto:mantik.tang@d-tmt.com'>
           <p>Email</p>
         </a>
         <Link
