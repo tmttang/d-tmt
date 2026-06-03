@@ -18,7 +18,7 @@ const Contact = () => {
               </MotionInner>
               <MotionInner>
                 <h2 className='text-gray'>
-                  <a href='mailto:tmtd.tang@gmail.com'>Get in touch</a>.
+                  <a href='mailto:mantik.tang@d-tmt.com'>Get in touch</a>.
                 </h2>
               </MotionInner>
             </div>
