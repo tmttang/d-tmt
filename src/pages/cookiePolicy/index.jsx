@@ -138,7 +138,7 @@ const CookiePolicy = () => {
             <ul>
               <li>
                 <strong>Email:</strong>
-                <a href='mailto:tmtd.tang@gmail.com'>tmtd.tang@gmail.com</a>
+                <a href='mailto:mantik.tang@d-tmt.com'>tmtd.tang@gmail.com</a>
               </li>
             </ul>
           </div>
