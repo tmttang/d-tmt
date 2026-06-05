@@ -9,13 +9,14 @@ const HeroSection = () => {
           <MotionInner>
             <div className='text-black max-w-3xl h-auto text-center'>
               <h1>
-                Front-End Developer from McCann and Ogilvy, now bringing a decade of agency craft to Vancouver.
+                Front-End Developer from McCann and Ogilvy, now bringing a
+                decade of agency craft to Vancouver.
               </h1>
             </div>
           </MotionInner>
           <div className='block'>
             <MotionInner>
-              <div className='flex flex-wrap items-center justify-center gap-6 '>
+              <div className='flex flex-wrap items-center justify-center gap-10 '>
                 <p>Expertise</p>
                 <p className='rounded-full bg-light-gray p-2'>JavaScript</p>
                 <p className='rounded-full bg-light-gray p-2'>React</p>
