@@ -7,13 +7,18 @@ const ExperiencesSection = () => {
     <>
       <MotionContainer>
         <div className='container mx-auto'>
-          <div className='flex flex-col items-center justify-center gap-6 h-50vh'>
+          <div className='flex flex-col items-center justify-center gap-6 h-50v'>
             <MotionInner>
               <p className='rounded-full bg-light-gray p-2'>About</p>
             </MotionInner>
             <MotionInner>
-              <h2 className='text-center w-full sm:w-1/2 mx-auto p-5'>
-                I'm a Front-End Developer with over a decade of experience at award-winning agencies McCann and Ogilvy, where I built digital campaigns for global brands including KFC, Huawei, Standard Chartered, and Cathay Pacific. I specialise in crafting interactive, detail-driven web experiences — from concept to production. Based in Vancouver and open to new opportunities.
+              <h2 className='text-center w-full sm:w-1/2 mx-auto p-5 sm:text-xl'>
+                I'm a Front-End Developer with over a decade of experience at
+                award-winning agencies McCann and Ogilvy, where I built digital
+                campaigns for global brands including KFC, Huawei, Standard
+                Chartered, and Cathay Pacific. I specialise in crafting
+                interactive, detail-driven web experiences — from concept to
+                production. Based in Vancouver and open to new opportunities.
               </h2>
             </MotionInner>
           </div>
