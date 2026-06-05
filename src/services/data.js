@@ -74,7 +74,8 @@ export const projectsDetail = {
   celeratex: {
     headline: 'Celerate X',
     titles: ['React', 'Framer Motion', 'Tailwind CSS', 'Vite'],
-    description: 'Celerate X',
+    description:
+      'Built the full website for Celeratex, a global investment firm focused on decarbonisation and sustainability — responsible for deploying over US$3 billion across private equity and infrastructure strategies. Delivered end-to-end frontend development covering company overview, team profiles, and business introduction.',
     liveUrl: 'https://celeratex.netlify.app',
     webp: ['/images/celeratex/webp/1.webp', '/images/celeratex/webp/3.webp'],
     jpg: ['/images/celeratex/jpg/1.jpg', '/images/celeratex/jpg/3.jpg'],
@@ -178,7 +179,8 @@ export const projectsDetail = {
   asiamiles: {
     titles: ['React', 'JavaScript', 'GSAP', 'PHP', 'SCSS'],
     headline: 'Asia Miles',
-    description: 'Asia Miles',
+    description:
+      "Developed multiple campaign sites and landing pages for Asia Miles, Cathay Pacific's loyalty programme. Each experience was designed to drive member engagement — from earning miles to redeeming rewards across a wide range of partners.",
     webp: [
       '/images/asiamiles/webp/2.webp',
       '/images/asiamiles/webp/4.webp',
@@ -256,7 +258,8 @@ export const projectsDetail = {
   shangrila: {
     titles: ['JavaScript', 'GSAP', 'PHP', 'SCSS'],
     headline: 'Shangri-La UGC gallery',
-    description: 'Capture your special moment of Shangri-La',
+    description:
+      "Built a UGC gallery for Shangri-La's social campaign. Guests shared their hotel moments on Instagram using a dedicated hashtag — the site fetched tagged photos in real time, displayed them in a curated gallery, and enabled the client to select winners for special prizes and cash rewards.",
     webp: [
       '/images/shangrila/webp/2.webp',
       '/images/shangrila/webp/3.webp',
