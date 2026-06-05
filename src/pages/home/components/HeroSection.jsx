@@ -9,8 +9,7 @@ const HeroSection = () => {
           <MotionInner>
             <div className='text-black max-w-3xl h-auto text-center'>
               <h1>
-                A skilled front-end developer delivering impactful web
-                experiences for clients globally
+                Front-End Developer from McCann and Ogilvy, now bringing a decade of agency craft to Vancouver.
               </h1>
             </div>
           </MotionInner>
