@@ -13,9 +13,7 @@ const ExperiencesSection = () => {
             </MotionInner>
             <MotionInner>
               <h2 className='text-center w-full sm:w-1/2 mx-auto p-5'>
-                A front-end web developer based in the Canada. I combine my
-                experience in product and brand to solve problems, tell stories,
-                and create compelling experiences.
+                I'm a Front-End Developer with over a decade of experience at award-winning agencies McCann and Ogilvy, where I built digital campaigns for global brands including KFC, Huawei, Standard Chartered, and Cathay Pacific. I specialise in crafting interactive, detail-driven web experiences — from concept to production. Based in Vancouver and open to new opportunities.
               </h2>
             </MotionInner>
           </div>
