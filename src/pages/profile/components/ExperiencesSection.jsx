@@ -38,6 +38,7 @@ const ExperiencesSection = () => {
                     <p className='text-gray'>{experience.time}</p>
                     <p className='text-xl font-medium '>{experience.company}</p>
                     <p className='text-gray'>{experience.title}</p>
+                    <p className='text-gray text-sm'>{experience.location}</p>
                     <p className='rounded-full bg-light-gray p-2 w-max mx-auto'>
                       {experience.tag}
                     </p>

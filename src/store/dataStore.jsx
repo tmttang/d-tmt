@@ -11,7 +11,7 @@ import {
 
 const useDataStore = create((set) => ({
   projects: [],
-  projectsDetail: [],
+  projectsDetail: {},
   profiles: [],
   experiences: [],
   clients: [],

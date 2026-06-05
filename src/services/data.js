@@ -356,6 +356,7 @@ export const experiences = [
     company: 'Ogilvy',
     title: 'Freelance Web Developer',
     tag: 'Freelance',
+    location: 'Hong Kong & Vancouver',
   },
   {
     id: 2,
@@ -363,6 +364,7 @@ export const experiences = [
     company: 'Ogilvy',
     title: 'Web Developer',
     tag: 'Permanent',
+    location: 'Hong Kong',
   },
   {
     id: 3,
@@ -370,6 +372,7 @@ export const experiences = [
     company: 'McCann',
     title: 'Programmer',
     tag: 'Permanent',
+    location: 'Hong Kong',
   },
 ]
 
