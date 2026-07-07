@@ -177,10 +177,10 @@ export const projectsDetail = {
   },
 
   asiamiles: {
-    titles: ['React', 'JavaScript', 'GSAP', 'PHP', 'SCSS'],
+    titles: ['React', 'JavaScript', 'GSAP', 'PHP', 'SCSS', 'Google Analytics'],
     headline: 'Asia Miles',
     description:
-      "Developed multiple campaign sites and landing pages for Asia Miles, Cathay Pacific's loyalty programme. Each experience was designed to drive member engagement — from earning miles to redeeming rewards across a wide range of partners.",
+      "Developed multiple campaign sites and landing pages for Asia Miles, Cathay Pacific's loyalty programme. Each experience was designed to drive member engagement — from earning miles to redeeming rewards across a wide range of partners. Implemented Google Analytics tracking to monitor user engagement and campaign performance.",
     webp: [
       '/images/asiamiles/webp/2.webp',
       '/images/asiamiles/webp/4.webp',
@@ -296,10 +296,10 @@ export const projectsDetail = {
   },
 
   rakuten: {
-    titles: ['JavaScript', 'GSAP', 'SCSS', 'PHP', 'Wordpress'],
+    titles: ['JavaScript', 'GSAP', 'SCSS', 'PHP', 'Wordpress', 'Google Analytics'],
     headline: 'Rakuten Today',
     description:
-      'Rakuten.Today is the official corporate blog of Rakuten Group, Inc., one of the world’s leading internet services companies.',
+      'Rakuten.Today is the official corporate blog of Rakuten Group, Inc., one of the world’s leading internet services companies. Built on WordPress with custom theme development, and integrated Google Analytics (gtag.js) and Facebook Pixel tracking for audience insights and campaign measurement.',
     webp: ['/images/rakuten/webp/3.webp'],
     jpg: ['/images/rakuten/jpg/3.jpg'],
     colspan: ['col-span-2'],
@@ -353,7 +353,7 @@ export const experiences = [
   {
     id: 1,
     time: '2022 - Present',
-    company: 'Ogilvy',
+    company: 'Freelance',
     title: 'Freelance Web Developer',
     tag: 'Freelance',
     location: 'Hong Kong & Vancouver',
